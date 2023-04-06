@@ -1,5 +1,8 @@
 let container = document.getElementById('container')
 let button = document.getElementById('add-item-btn')
+function removeStyles() {
+
+}
 button.addEventListener('click', function () {
     let newElement = document.createElement('div');
     newElement.id = 'new_element';
@@ -12,13 +15,13 @@ button.addEventListener('click', function () {
     newButton.id = 'new_button';
     newButton.className = 'new_button';
     newButton.innerText = 'Close';
-    newButton.addEventListener('click', () => {
-        newElement.remove()
-    })
     container.appendChild(newElement);
     newElement.appendChild(newText);
     newElement.appendChild(newButton);
     setTimeout(() => {
-        newElement.remove()
+        newElement.remove();
     }, 5000)
+    newButton.addEventListener('click', () => {
+        newElement.remove();
+    })
 })
