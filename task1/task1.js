@@ -1,8 +1,5 @@
 let container = document.getElementById('container')
 let button = document.getElementById('add-item-btn')
-function removeStyles() {
-
-}
 button.addEventListener('click', function () {
     let newElement = document.createElement('div');
     newElement.id = 'new_element';
