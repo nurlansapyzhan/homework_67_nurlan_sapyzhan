@@ -26,12 +26,12 @@ function loadCharacter(character) {
         <div class="card">
             <img src="${character.image}" class="card-img-top" alt="character pic">
             <div class="card-body">
-                <h5 class="card-title">Name: ${character.name}</h5>
-                <p class="card-text">Status: ${character.status}</p>
-                <p class="card-text">Species: ${character.species}</p>
-                <p class="card-text">Gender: ${character.gender}</p>
-                <p class="card-text">Origin: ${character.origin.name}</p>
-                <p class="card-text">Location: ${character.location.name}</p>
+                <h5 class="card-title">Name: <span class="info">${character.name}</span></h5>
+                <p class="card-text">Status: <span class="info">${character.status}</span></p>
+                <p class="card-text">Species: <span class="info">${character.species}</span></p>
+                <p class="card-text">Gender: <span class="info">${character.gender}</span></p>
+                <p class="card-text">Origin: <span class="info">${character.origin.name}</span></p>
+                <p class="card-text">Location: <span class="info">${character.location.name}</span></p>
             </div>
         </div>
     `;

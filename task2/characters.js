@@ -17,7 +17,7 @@ function loadCharacter(character) {
     let column = document.createElement('div')
     column.className = 'col'
     column.innerHTML =
-        `<a href="character.html/?id=${character.id}">
+        `<a href="character.html/?id=${character.id}" class="card_link">
             <div class="card">
                 <img src="${character.image}" class="card-img-top" alt="character pic">
                 <div class="card-body">

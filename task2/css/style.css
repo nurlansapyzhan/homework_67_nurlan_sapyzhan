@@ -18,3 +18,21 @@ body {
     text-align: center;
     font-size: 36px;
 }
+
+.card_link{
+    text-decoration: none;
+    color: black;
+}
+
+.card_link:hover{
+    color: black;
+}
+
+.card-text{
+    text-align: center;
+    font-size: 24px;
+}
+
+.info{
+    font-weight: 600;
+}
